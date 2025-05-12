@@ -14,5 +14,6 @@ Suggests:
     rmarkdown,
     bookdown,
     tidyverse,
-    ggplot2
+    ggplot2,
+    testthat
 VignetteBuilder: knitr
