@@ -22,7 +22,7 @@ generate_partial_clique <- function(n,
 
     clique_size <- ceiling(n * clique_fraction)
 
-    adj_mat <- matrix(rbinom(n*n, 1, non_clique_edge_density/2),
+    adj_mat <- matrix(stats::rbinom(n*n, 1, non_clique_edge_density/2),
                       nrow=n)
 
     clique_edge_num <- ceiling(clique_edge_density*(clique_size*(clique_size-1)/2))
