@@ -1,4 +1,4 @@
-set.seed(10)
+set.seed(11)
 library(UWBiost561)
 
 data <- UWBiost561::generate_partial_clique(n = 10,
