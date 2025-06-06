@@ -413,7 +413,7 @@ I will release the final project specifications (again, which involve making a P
 
 Please write (in one to five sentences) what you are thinking of doing for your final project. If your answer hasn't changed since HW3, you can copy-paste your answer from HW3 into this question for HW4.
 
-<span style="color: red;">I'm going to use the UWBiost 561 package I've made. </span>
+<span style="color: red">I'm going to use the UWBiost 561 package I've made.</span>
 
 # Q5: Feedback (Optional)
 
