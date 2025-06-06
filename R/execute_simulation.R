@@ -53,7 +53,7 @@
 #'
 #' @returns A data frame with the simulation results
 #' @export
-simulation <- function(trials_per_level,
+execute_simulation <- function(trials_per_level,
                        n_nodes,
                        clique_fraction,
                        alpha,
