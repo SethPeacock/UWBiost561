@@ -16,7 +16,7 @@
     warning=function(cond){
         list(clique_idx = NA,
              edge_density = NA,
-             status = cond,
+             status = "tryCatch warning",
              valid = F)
     })
 }
@@ -85,10 +85,8 @@ execute_simulation <- function(trials_per_level,
                     level_result <- .run_level(adj_mat=adj_mat,
                                                alpha=alpha_i)
                     level_result$n_nodes <- n
-                    level_result$clique_fraction <- clique_fraction
+                    level_result$clique_fraction <- frac
                     level_result$alpha <- alpha_i
-                    print(result_data)
-                    print(level_result)
                     result_data <- rbind(result_data, level_result)
                 }
             }
