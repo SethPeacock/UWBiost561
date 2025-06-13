@@ -25,8 +25,6 @@ UW561Biost::run_example()
 
 # Dependencies
 
-The package depends on the following packages: `MASS` and `mvtnorm`.
-
 # Session info
 
 This package was developed in the following environment
