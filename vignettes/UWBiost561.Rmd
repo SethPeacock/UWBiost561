@@ -1,0 +1,46 @@
+---
+title: "UWBiost561 Demo"
+author: "Seth Peacock"
+date: "`r Sys.Date()`"
+output: 
+  rmarkdown::html_document:
+vignette: >
+  %\VignetteIndexEntry{Demo}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This vignette provides an example for the three main functions of this package: namely, `generate_partial_clique`, `compute_maximal_partial_clique`, and `execute_simulation`. First, we load the package and set the seed.
+
+```{r}
+library(UWBiost561)
+set.seed(3910458)
+```
+
+
+### `generate_partial_clique`
+This function randomly generates an adjacency matrix and is the used in the `execute_simulation` function. 
+```{r}
+adj_matrix <- generate_partial_clique(n=8,
+                                      clique_fraction=0.5,
+                                      clique_edge_density=0.7)
+adj_matrix
+```
+
+### `compute_maximal_clique`
+Provided an adjacency matrix, the `compute_maximal_clique` function returns the indices of a partial clique with the required density, `alpha`, along with other information. The partial clique may not be the true maximal clique as it does not conduct an exhaustive search.
+```{r}
+compute_maximal_partial_clique8(adj_mat=adj_matrix$adj_matrix,
+                               alpha=.7)
+```
+
+### `execute_simulation`
+This function test each `compute_maximal_cliqueN` on matrices of the given levels. It returns a data frame with the size of the partial clique returned by each function, if the clique was valid, and the time it took to run.
+
+```{r}
+execute_simulation(trials_per_level=2,
+                   n_nodes=c(5),
+                   clique_fraction=c(0.5),
+                   alpha=c(1))
+```
+

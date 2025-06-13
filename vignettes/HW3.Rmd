@@ -382,7 +382,6 @@ figures inside this R Markdown file.
 The intent of this question is to provide "evidence" that your `devtools::check()`
 went smoothly. You do not need to worry about what your screenshots show specifically.
 
-Figure \@ref(fig:check1) and \@ref(fig:check2) shows the screenshots you are trying to reproduce.
 
 ```{r check1, out.width = "400px", fig.align="center", echo = FALSE, fig.cap=c("The first screenshot you are trying to reproduce (without the Sample watermark) in Question 4C.")}
 knitr::include_graphics("hw3_scrn_1.png")

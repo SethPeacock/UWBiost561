@@ -28,3 +28,10 @@ A list containing the adjacency matrix, the index that reverse the permutation a
 Generate partial clique
 Creates a graph with a partial clique according to the values passed. The output is the graph, the index so that the graph can be reordered to make the partial clique more apparent, and lastly, the size and number of edges in the partial clique.
 }
+\examples{
+library(UWBiost561)
+generate_partial_clique(n=10,
+                        clique_fraction=0.5,
+                        clique_edge_density=0.9)
+
+}

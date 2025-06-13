@@ -19,3 +19,11 @@ a list containing the index of the clique \code{clique_idx} and density of the c
 Compute maximal partial clique
 This function computes the maximal partial clique by recursively removing the node with the least number of edges until the desired density (alpha) is obtained
 }
+\examples{
+library(UWBiost561)
+adj_mat <- diag(1, 10, 10)
+adj_mat[1:3, 1:3] <- 1
+compute_maximal_partial_clique(adj_mat,
+                               alpha = 1)
+
+}

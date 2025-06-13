@@ -67,7 +67,7 @@ compute_maximal_partial_clique <- function(adj_mat,
     edge_density <- .obtain_density(adj_mat[clique_idx,
                                             clique_idx])
 
-    return(list(clique_idx = clique_idx,
-                edge_density = edge_density))
+    return(list("clique_idx" = clique_idx,
+                "edge_density" = edge_density))
 }
 
