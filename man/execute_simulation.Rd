@@ -31,9 +31,9 @@ This function runs the simulation.
 }
 \examples{
 library(UWBiost561)
-simulation_result <- execute_simulation(trials_per_level=1,
-                                        n_nodes=c(10),
-                                        clique_fraction=c(0.5),
-                                        alpha=c(0.6))
+execute_simulation(trials_per_level=1,
+                   n_nodes=c(10),
+                   clique_fraction=c(0.5),
+                   alpha=c(0.6))
 
 }
