@@ -19,3 +19,4 @@ Suggests:
     devtools,
     readr
 VignetteBuilder: knitr
+URL: https://sethpeacock.github.io/UWBiost561/

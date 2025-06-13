@@ -9,6 +9,12 @@
 #' @param non_clique_edge_density The density of edge not withing the clique, also excluding self-edges
 #'
 #' @returns A list containing the adjacency matrix, the index that reverse the permutation applied (making it easier to see the clique), the size of the partial clique and the number of edges it contains
+#' @examples
+#' library(UWBiost561)
+#' generate_partial_clique(n=10,
+#'                         clique_fraction=0.5,
+#'                         clique_edge_density=0.9)
+#'
 #' @export
 generate_partial_clique <- function(n,
                                     clique_fraction,

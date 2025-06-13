@@ -52,6 +52,13 @@
 #' @param seed For setting the seed
 #'
 #' @returns A data frame with the simulation results
+#' @examples
+#' library(UWBiost561)
+#' simulation_result <- execute_simulation(trials_per_level=5,
+#'                                         n_nodes=c(10,20),
+#'                                         clique_fraction=c(0.5,0.7),
+#'                                         alpha=c(0.6,0.9))
+#'
 #' @export
 execute_simulation <- function(trials_per_level,
                        n_nodes,

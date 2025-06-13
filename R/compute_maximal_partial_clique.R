@@ -24,6 +24,13 @@
 #' @param alpha The density required to be a partial clique, excluding self-edges.
 #'
 #' @returns a list containing the index of the clique \code{clique_idx} and density of the clique
+#' @examples
+#' library(UWBiost561)
+#' adj_mat <- diag(1, 10, 10)
+#' adj_mat[1:3, 1:3] <- 1
+#' compute_maximal_partial_clique(adj_mat,
+#'                                alpha = 1)
+#'
 #' @export
 compute_maximal_partial_clique <- function(adj_mat,
                                            alpha){
